@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
-import { GlobalContext } from '../context/GlobalState';
-import EmployeeItem from './EmployeeItem';
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/GlobalState";
+import EmployeeItem from "./EmployeeItem";
 
 const EmployeeList = () => {
   const { employees } = useContext(GlobalContext);
-  
+
   return (
     <React.Fragment>
       {employees.length > 0 ? (
@@ -14,7 +14,9 @@ const EmployeeList = () => {
           ))}
         </>
       ) : (
-        <p className="text-center bg-gray-100 text-gray-500 py-5">No data.</p>
+        <p className="text-center bg-gray-100 text-xl text-gray-600 py-5">
+          No data.
+        </p>
       )}
     </React.Fragment>
   );
