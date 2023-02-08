@@ -10,7 +10,7 @@ const EmployeeList = () => {
       {employees.length > 0 ? (
         <>
           {employees.map((employee) => (
-            <EmployeeItem employee={employee} />
+            <EmployeeItem key={employee.id} employee={employee} />
           ))}
         </>
       ) : (

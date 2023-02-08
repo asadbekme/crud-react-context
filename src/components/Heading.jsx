@@ -8,11 +8,11 @@ const Heading = () => {
       </div>
       <div className="flex-grow text-right px-4 py-2 m-2">
         <Link to="/add-employee">
-          <button className="bg-green-400 hover:bg-green-500 text-white font-semibold py-2 px-4 rounded inline-flex items-center">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="27"
+              height="27"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"

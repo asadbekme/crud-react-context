@@ -32,4 +32,4 @@ const appReducer = (state, action) => {
   }
 }
 
-export default appReducer
+export default appReducer;

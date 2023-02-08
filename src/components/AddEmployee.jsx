@@ -7,7 +7,7 @@ const AddEmployee = () => {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [job, setJob] = useState("");
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -27,7 +27,7 @@ const AddEmployee = () => {
         <form onSubmit={onSubmit}>
           <div className="w-full mb-5">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2"
               htmlFor="name"
             >
               Name of employee
@@ -42,13 +42,13 @@ const AddEmployee = () => {
           </div>
           <div className="w-full mb-5">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2"
               htmlFor="company"
             >
               Company
             </label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:text-gray-600 focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:text-gray-600 focus:outline-none"
               value={company}
               onChange={(e) => setCompany(e.target.value)}
               type="text"
@@ -57,7 +57,7 @@ const AddEmployee = () => {
           </div>
           <div className="w-full mb-5">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700 text-sm font-bold mb-2"
               htmlFor="job"
             >
               Job
@@ -71,7 +71,7 @@ const AddEmployee = () => {
             />
           </div>
           <div className="flex items-center justify-between">
-            <button className="mt-5 bg-green-400 w-full hover:bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            <button className="mt-5 bg-green-500 w-full hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
               Add Employee
             </button>
           </div>

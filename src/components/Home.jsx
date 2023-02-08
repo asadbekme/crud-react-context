@@ -2,10 +2,10 @@ import { EmployeeList, Heading } from "./index";
 
 const Home = () => {
   return (
-    <div className="container mx-auto px-2 max-w-5xl">
-      <h3 className="text-center text-3xl mt-10 leading-8 text-black font-bold tracking-wide uppercase">
+    <div className="container mx-auto max-w-5xl px-[10px]">
+      <h2 className="text-center text-3xl mt-8 leading-8 text-black font-bold uppercase">
         CRUD App with React Context API and Hooks
-      </h3>
+      </h2>
       <Heading />
       <EmployeeList />
     </div>
